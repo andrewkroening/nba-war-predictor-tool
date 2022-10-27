@@ -12,7 +12,7 @@ license: cc
 
 # Hello and welcome to this NBA WAR Predictor Tool
 
-[![Continuous Integration](https://github.com/andrewkroening/nba-war-predictor-tool/actions/workflows/main.yml/badge.svg)](https://github.com/andrewkroening/nba-war-predictor-tool/actions/workflows/main.yml)    
+[![Continuous Integration](https://github.com/andrewkroening/nba-war-predictor-tool/actions/workflows/main.yml/badge.svg)](https://github.com/andrewkroening/nba-war-predictor-tool/actions/workflows/main.yml)    [![Sync to Hugging Face hub](https://github.com/andrewkroening/nba-war-predictor-tool/actions/workflows/hugging_face_cicd.yml/badge.svg)](https://github.com/andrewkroening/nba-war-predictor-tool/actions/workflows/hugging_face_cicd.yml)
 
 [You can find the NBA WAR Predictor here.](https://huggingface.co/spaces/andrewkroening/nba-war-predictor)
 
