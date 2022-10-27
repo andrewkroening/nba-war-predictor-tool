@@ -1,5 +1,4 @@
 black
-pytest
 pylint
 ipython
 pandas
