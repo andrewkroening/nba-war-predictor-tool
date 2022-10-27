@@ -1,0 +1,10 @@
+black
+pytest
+pylint
+ipython
+pandas
+gradio
+prophet
+plotly
+datasets
+huggingface
