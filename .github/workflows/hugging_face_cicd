@@ -1,5 +1,3 @@
-# pulled from HuggingFace Docs
-
 name: Sync to Hugging Face hub
 on:
   push:
@@ -17,5 +15,5 @@ jobs:
           fetch-depth: 0
       - name: Push to hub
         env:
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}        
         run: git push https://andrewkroening:$HF_TOKEN@huggingface.co/spaces/andrewkroening/nba-war-predictor main
