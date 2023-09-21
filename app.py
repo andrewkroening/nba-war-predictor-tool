@@ -88,16 +88,19 @@ with gr.Blocks() as demo:
     """
     )
     with gr.Row():
-        year = gr.Slider(1977, 2021, label="Season", interactive=True, step=1)
+        year = gr.Dropdown(1977, 2021, label="Season", interactive=True, step=1)
         player = gr.Dropdown(players, label="Player", interactive=True)
 
     with gr.Column(visible=False) as output_col:
         gr.Markdown(
             "**Below is the player forecast for the selected season plus 5 years. Next to the graph is a dropdown you can use to change the season and update the chart and see how a player's projection has changed over time.**"
         )
+
+        with gr.Row():
+            season = gr.Dropdown(seasons, label="Season", interactive=True, step=1)
+
         with gr.Row():
             plt = gr.Plot()
-            season = gr.Dropdown(seasons, label="Season", interactive=True, step=1)
 
     year.change(get_players, inputs=year, outputs=[player, output_col])
     player.change(
